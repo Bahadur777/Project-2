@@ -1,0 +1,78 @@
+.header-container{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.header-image img{
+    width: 100%;
+}
+.headline{
+    padding: 3rem 0 1rem 0;
+}
+.headline h1{
+    color: var(--color-text);
+}
+.header-paragraph{
+    padding: 0.5rem 0;
+}
+.header-paragraph p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+.header-form{
+    width: 100%;
+    padding: 1rem 0;
+}
+.header-input{
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    background: var(--color-blog);
+    color: #fff;
+}
+.header-input::placeholder{
+    color: #fff;
+}
+.headline-bottom img{
+    width: 100px;
+    padding: 0.5rem 0;
+}
+@media screen and (max-width: 1020px){
+   .header-container{
+    display: block;
+    flex-direction: row-reverse !important;
+   }
+   
+   .headline h1{
+    font-size: 3rem;
+   }
+   .header-form{
+    width: 100%;
+   }
+   .header-form input{
+    width: 80%;
+   }
+ }
+ @media screen and (max-width: 768px){
+    .headline h1{
+        font-size: 2rem;
+    }
+    .header-form input{
+        width: 70%;
+       }
+ }
+ @media screen and (max-width: 320px){
+    .header-form input{
+        width: 60%;
+       }
+       .headline-bottom img{
+        width: 100px;
+       }
+ }
