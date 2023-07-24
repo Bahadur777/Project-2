@@ -3,7 +3,9 @@ import './possibility.css'
 
 const Possibility = () => {
   return (
-    <div>Possibility</div>
+    <div>
+      <h1>Bahadur mia shihab</h1>
+    </div>
   )
 }
 
